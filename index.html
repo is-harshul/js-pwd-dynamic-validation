@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validate password</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="app-container">
+        <div id="form-container">
+          <div class="validation-checks">
+            <h4>Password must include:</h4>
+            <div class="validation-circle red" id="len6Check"></div><li class="validation-item">At least 6 characters long</li><br>
+            <div class="validation-circle red" id="spCharCheck"></div><li class="validation-item">At least 1 Special character</li><br>
+            <div class="validation-circle red" id="upCharCheck"></div><li class="validation-item">At least 1 Uppercase character</li><br>
+            <div class="validation-circle red" id="lowCharCheck"></div><li class="validation-item">At least 1 Lowercase character</li><br>
+            <div class="validation-circle red" id="numCheck"></div><li class="validation-item">At least 1 number</li><br>
+          <div class="input-container">
+            <input type="password" placeholder="Enter password..." name="pass" id="password-field" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
